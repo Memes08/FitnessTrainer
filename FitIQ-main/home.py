@@ -1337,7 +1337,7 @@ elif selected_page == "Nutrition":
     import matplotlib.pyplot as plt
 
     st.title('Nutrition Calorie Tracker')
-    df = pd.read_csv("./food.csv", encoding='mac_roman')
+    df = pd.read_csv("./food.csv", encoding='utf-8')
     ye = st.number_input('Enter Number of dishes', min_value=1, max_value=10)
     i = 0
     j = 0
