@@ -1331,7 +1331,7 @@ elif selected_page == "Nutrition":
     import streamlit as st
     import pandas as pd
     import numpy as np
-    import plotly.graph_objects as go
+
     # from pydataset import data
     from streamlit_extras.no_default_selectbox import selectbox
     import matplotlib.pyplot as plt
@@ -1367,11 +1367,6 @@ elif selected_page == "Nutrition":
 
         st.write("Total Calories:", calories)
 
-        # Create pie chart
-        fig = go.Figure(
-            data=[go.Pie(labels=list1, values=list2, textinfo='label+percent', insidetextorientation='radial')])
-        fig.update_layout(title="Calorie Breakdown")
-        st.plotly_chart(fig)
 
 
     except:
