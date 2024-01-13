@@ -22,10 +22,6 @@ lottie_hello = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_FY
 music = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_ikk4jhps.json")
 podcast = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_JjpNLdaKYX.json")
 
-# Load images
-img_contact_form = Image.open("home.jpg")
-img_lottie_animation = Image.open("home.jpg")
-
 
 # Set page configuration
 st.set_page_config(page_title="Fitness Trainer", page_icon=":tada:", layout="wide")
