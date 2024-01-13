@@ -1,21 +1,7 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
-import os
 
-file_path = "./food.csv"
-
-if os.path.exists(file_path):
-    st.write("File exists:", file_path)
-else:
-    st.write("File does not exist:", file_path)
-
-# Now you can proceed to read the CSV file if it exists
-if os.path.exists(file_path):
-    df = pd.read_csv(file_path, encoding='utf-8')
-    # You can do further processing with the DataFrame df here
-    # For example, display the data using st.dataframe(df)
-    st.dataframe(df)
 from PIL import Image
 
 if 'counter4' not in st.session_state:
